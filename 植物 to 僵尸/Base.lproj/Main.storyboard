@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome1.PNG" id="UpZ-Ag-EfF">
+                                <rect key="frame" x="22" y="68" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon40.png" id="zfz-MX-foo">
+                                <rect key="frame" x="122" y="68" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome3.PNG" id="0De-8Y-xyO">
+                                <rect key="frame" x="210" y="68" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="BYo-sM-Fm1">
+                                <rect key="frame" x="22" y="344" width="132" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="quP-gz-dKn">
+                                <rect key="frame" x="172" y="344" width="132" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Kv-pL-yf4">
+                                <rect key="frame" x="90" y="220" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tIG-01-DZG" kind="modal" id="m4m-2Q-K3j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <connections>
+                        <outlet property="viewOne" destination="BYo-sM-Fm1" id="YaO-Ku-Wt4"/>
+                        <outlet property="viewTwo" destination="quP-gz-dKn" id="nTV-0U-v1p"/>
+                        <outletCollection property="allSuperimagView" destination="UpZ-Ag-EfF" id="eSI-FM-OYx"/>
+                        <outletCollection property="allSuperimagView" destination="zfz-MX-foo" id="Xot-6s-5ru"/>
+                        <outletCollection property="allSuperimagView" destination="0De-8Y-xyO" id="6yU-po-Fay"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="b67-5E-4TP">
+                    <connections>
+                        <action selector="dragToCopyImage:" destination="vXZ-lx-hvc" id="sNK-qm-QYj"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="234" y="406"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="wg3-oN-RJ4">
+            <objects>
+                <viewController id="tIG-01-DZG" customClass="gameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c4Z-Y8-bHz">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="WfR-z9-a4L">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bk1.png" id="7Xm-v6-z2q">
+                                <rect key="frame" x="0.0" y="0.0" width="641" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seedbank.png" id="4SG-Bz-A5G">
+                                <rect key="frame" x="75" y="0.0" width="249" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achieve_mark.png" id="72p-fl-dXf">
+                                <rect key="frame" x="203" y="7" width="44" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achieve_mark.png" id="Rlv-TU-jhZ">
+                                <rect key="frame" x="99" y="7" width="44" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achieve_mark.png" id="i8R-Hy-wEg">
+                                <rect key="frame" x="151" y="7" width="44" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achieve_mark.png" id="TLY-fJ-QOn">
+                                <rect key="frame" x="255" y="7" width="44" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunbank.png" id="MgP-jV-brQ">
+                                <rect key="frame" x="6" y="0.0" width="69" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="VLU-U9-qrR">
+                                <rect key="frame" x="63" y="53" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="wk7-us-aek">
+                                <rect key="frame" x="63" y="101" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="gkq-O2-puh">
+                                <rect key="frame" x="63" y="155" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="7dF-Rp-hHu">
+                                <rect key="frame" x="63" y="260" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pgE-ft-v4b">
+                                <rect key="frame" x="19" y="38" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="vQh-wK-Hby">
+                                <rect key="frame" x="63" y="212" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="boardImageView" destination="4SG-Bz-A5G" id="KDv-U6-usQ"/>
+                        <outlet property="sunCountLable" destination="pgE-ft-v4b" id="Lg5-ku-vrQ"/>
+                        <outletCollection property="planImage" destination="Rlv-TU-jhZ" id="uzG-oV-YNi"/>
+                        <outletCollection property="planImage" destination="i8R-Hy-wEg" id="4ax-lG-5MN"/>
+                        <outletCollection property="planImage" destination="72p-fl-dXf" id="6PI-zX-NGz"/>
+                        <outletCollection property="planImage" destination="TLY-fJ-QOn" id="441-mH-Ruo"/>
+                        <outletCollection property="plantHomeView" destination="7dF-Rp-hHu" id="Rsu-aK-Zzk"/>
+                        <outletCollection property="plantHomeView" destination="VLU-U9-qrR" id="uum-wc-qSl"/>
+                        <outletCollection property="plantHomeView" destination="vQh-wK-Hby" id="pN4-co-dTR"/>
+                        <outletCollection property="plantHomeView" destination="gkq-O2-puh" id="hfH-Db-r6q"/>
+                        <outletCollection property="plantHomeView" destination="wk7-us-aek" id="Wpd-kq-kr9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PrY-Ci-PoQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="416"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="achieve_mark.png" width="75" height="60"/>
+        <image name="bk1.png" width="677" height="320"/>
+        <image name="icon40.png" width="40" height="40"/>
+        <image name="seedbank.png" width="375" height="87"/>
+        <image name="sunbank.png" width="78" height="87"/>
+        <image name="welcome1.PNG" width="640" height="1136"/>
+        <image name="welcome3.PNG" width="640" height="1136"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
